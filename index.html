@@ -34,8 +34,21 @@
             width: 100%;
         }
 
+        .logo {
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        .logo img {
+            width: 50%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
         .character {
-            display: inline-block;
+            display: none;
             margin: 20px;
             text-align: center;
             position: relative;
@@ -72,39 +85,36 @@
 <body>
 
 <header>
-    <h1>Marvel Charaktere</h1>
+    <div class="logo">
+        <img src="https://www.mundodeportivo.com/alfabeta/hero/2023/06/tras-7-anos-marvel-ha-renovado-su-intro-y-su-logo.jpg?width=768&aspect_ratio=16:9&format=nowebp" alt="Marvel Logo">
+    </div>
 </header>
 
 <main>
-    <div class="character">
+    <p onmouseover="showCharacter('iron-man')">Iron Man</p>
+    <p onmouseover="showCharacter('captain-america')">Captain America</p>
+    <p onmouseover="showCharacter('thor')">Thor</p>
+    <p onmouseover="showCharacter('black-widow')">Black Widow</p>
+    <p onmouseover="showCharacter('hulk')">Hulk</p>
+    <p onmouseover="showCharacter('spider-man')">Spider-Man</p>
+
+    <div class="character" id="iron-man">
         <img src="https://static.wikia.nocookie.net/avengers/images/5/53/Iron_Man_Mk_XLIII.jpg/revision/latest?cb=20160313073220&path-prefix=de" alt="Iron Man">
         <p>Iron Man</p>
     </div>
-    <div class="character">
+    <div class="character" id="captain-america">
         <img src="https://static.printler.com/cache/5/0/f/2/c/a/50f2ca9e97f8bbd6813f40370f492968a6af7870.jpg" alt="Captain America">
         <p>Captain America</p>
     </div>
-    <div class="character">
+    <div class="character" id="thor">
         <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/Thor_in_LoveAndThunder_Poster.jpg/revision/latest?cb=20231021012616" alt="Thor">
         <p>Thor</p>
     </div>
-    <div class="character">
+    <div class="character" id="black-widow">
         <img src="https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Black Widow">
         <p>Black Widow</p>
     </div>
-    <div class="character">
+    <div class="character" id="hulk">
         <img src="https://static.wikia.nocookie.net/vsbattles/images/a/a8/Hulk_png_render_from_aou_by_joaohbd-d8knjyv.png/revision/latest/scale-to-width-down/420?cb=20161009033221" alt="Hulk">
         <p>Hulk</p>
-    </div>
-    <div class="character">
-        <img src="https://image.api.playstation.com/vulcan/img/rnd/202011/0714/Cu9fyu6DM41JPekXLf1neF9r.png?w=440" alt="Spider-Man">
-        <p>Spider-Man</p>
-    </div>
-</main>
 
-<footer>
-    <p>&copy; 2024 Marvel. Alle Rechte vorbehalten.</p>
-</footer>
-
-</body>
-</html>
