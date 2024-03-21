@@ -58,39 +58,17 @@
             color: white;
         }
 
-        .box {
+        .car {
             width: 200px;
-            height: 200px;
-            background-color: #3498db;
-            margin: 0 auto;
-            position: relative;
-            animation: mymove 5s infinite alternate;
+            margin: 10px;
+            display: inline-block;
         }
 
-        @keyframes mymove {
-            from {left: 0px;}
-            to {left: 200px;}
-        }
-
-        .carousel-container {
-            width: 80%;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-
-        .carousel-slide {
-            display: flex;
-            transition: transform 0.5s ease;
-        }
-
-        .carousel-slide div {
-            flex: 0 0 auto;
+        .car img {
             width: 100%;
-            margin-right: 20px;
-            text-align: center;
-            background-color: #ddd;
-            padding: 20px;
+            height: auto;
             border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
@@ -102,24 +80,18 @@
 
 <main>
     <div class="interactive-section">
-        <h2>Button mit Hover-Effekt</h2>
-        <button class="button" onclick="alert('Wow! Du hast auf den Button geklickt!')">Klick mich!</button>
-    </div>
-
-    <div class="interactive-section">
-        <h2>Animierte Box</h2>
-        <div class="box"></div>
-    </div>
-
-    <div class="interactive-section">
-        <h2>Karussell</h2>
-        <div class="carousel-container">
-            <div class="carousel-slide">
-                <div>Bild 1</div>
-                <div>Bild 2</div>
-                <div>Bild 3</div>
-                <div>Bild 4</div>
-            </div>
+        <h2>Autos</h2>
+        <div class="car">
+            <img src="https://via.placeholder.com/200x150.png?text=Auto+1" alt="Auto 1">
+            <p>Auto 1</p>
+        </div>
+        <div class="car">
+            <img src="https://via.placeholder.com/200x150.png?text=Auto+2" alt="Auto 2">
+            <p>Auto 2</p>
+        </div>
+        <div class="car">
+            <img src="https://via.placeholder.com/200x150.png?text=Auto+3" alt="Auto 3">
+            <p>Auto 3</p>
         </div>
     </div>
 </main>
