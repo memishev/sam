@@ -117,4 +117,32 @@
     <div class="character" id="hulk">
         <img src="https://static.wikia.nocookie.net/vsbattles/images/a/a8/Hulk_png_render_from_aou_by_joaohbd-d8knjyv.png/revision/latest/scale-to-width-down/420?cb=20161009033221" alt="Hulk">
         <p>Hulk</p>
+    </div>
+    <div class="character" id="spider-man">
+        <img src="https://image.api.playstation.com/vulcan/img/rnd/202011/0714/Cu9fyu6DM41JPekXLf1neF9r.png?w=440" alt="Spider-Man">
+        <p>Spider-Man</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Marvel. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    function showCharacter(characterId) {
+        const characters = document.querySelectorAll('.character');
+        characters.forEach(character => {
+            character.style.display = 'none';
+        });
+        const character = document.getElementById(characterId);
+        character.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
+
+    <div class="character" id="hulk">
+        <img src="https://static.wikia.nocookie.net/vsbattles/images/a/a8/Hulk_png_render_from_aou_by_joaohbd-d8knjyv.png/revision/latest/scale-to-width-down/420?cb=20161009033221" alt="Hulk">
+        <p>Hulk</p>
 
