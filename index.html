@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meine coole interaktive Webseite</title>
+    <title>Marvel Charaktere</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -34,43 +34,65 @@
             width: 100%;
         }
 
-        .interactive-section {
-            margin-bottom: 20px;
+        .character {
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
         }
 
-        .logo {
+        .character img {
             width: 200px;
-            margin: 10px;
-        }
-
-        .logo img {
-            width: 100%;
             height: auto;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .character img:hover {
+            transform: scale(1.1);
+        }
+
+        .character p {
+            margin-top: 10px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Willkommen auf meiner interaktiven Webseite!</h1>
+    <h1>Marvel Charaktere</h1>
 </header>
 
 <main>
-    <div class="interactive-section">
-        <h2>Logos</h2>
-        <div class="logo">
-            <img src="https://via.placeholder.com/200x150.png?text=GFN+GmbH+Logo" alt="GFN GmbH Logo">
-        </div>
-        <div class="logo">
-            <img src="https://via.placeholder.com/200x150.png?text=Azure+Logo" alt="Azure Logo">
-        </div>
+    <div class="character">
+        <img src="https://static.wikia.nocookie.net/avengers/images/5/53/Iron_Man_Mk_XLIII.jpg/revision/latest?cb=20160313073220&path-prefix=de" alt="Iron Man">
+        <p>Iron Man</p>
+    </div>
+    <div class="character">
+        <img src="https://www.google.es/url?sa=i&url=https%3A%2F%2Fwww.amazon.com%2FAdvanced-Graphics-Captain-America-Cardboard%2Fdp%2FB01NCTN6XV&psig=AOvVaw32aUNhT_gUaZsdt6eJ1Ars&ust=1711105103310000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNiLq7CZhYUDFQAAAAAdAAAAABAE" alt="Captain America">
+        <p>Captain America</p>
+    </div>
+    <div class="character">
+        <img src="https://static.wikia.nocookie.net/marvelcinematicuniverse/images/2/22/Thor_in_LoveAndThunder_Poster.jpg/revision/latest?cb=20231021012616" alt="Thor">
+        <p>Thor</p>
+    </div>
+    <div class="character">
+        <img src="https://m.media-amazon.com/images/M/MV5BNjRmNDI5MjMtMmFhZi00YzcwLWI4ZGItMGI2MjI0N2Q3YmIwXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg" alt="Black Widow">
+        <p>Black Widow</p>
+    </div>
+    <div class="character">
+        <img src="https://static.wikia.nocookie.net/vsbattles/images/a/a8/Hulk_png_render_from_aou_by_joaohbd-d8knjyv.png/revision/latest/scale-to-width-down/420?cb=20161009033221" alt="Hulk">
+        <p>Hulk</p>
+    </div>
+    <div class="character">
+        <img src="https://image.api.playstation.com/vulcan/img/rnd/202011/0714/Cu9fyu6DM41JPekXLf1neF9r.png?w=440" alt="Spider-Man">
+        <p>Spider-Man</p>
     </div>
 </main>
 
 <footer>
-    <p>&copy; 2024 Meine coole Webseite. Alle Rechte vorbehalten.</p>
+    <p>&copy; 2024 Marvel. Alle Rechte vorbehalten.</p>
 </footer>
 
 </body>
